@@ -1,0 +1,6 @@
+language: en
+pipeline:
+- name: components.classifier.IntentClassifier
+policies:
+- name: RulePolicy
+assistant_id: 20250406-105723-clear-canoe

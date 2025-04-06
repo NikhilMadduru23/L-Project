@@ -1,0 +1,33 @@
+version: "3.1"
+
+intents:
+  - abbreviation
+  - aircraft
+  - airfare
+  - airline
+  - flight
+  - flight_time
+  - ground_service
+  - quantity
+
+responses:
+  utter_abbreviation:
+    - text: "Could you please clarify which abbreviation you’re asking about? For example, 'UA' stands for United Airlines."
+  utter_aircraft:
+    - text: "What specific aircraft information are you looking for? I can tell you about types used on certain routes."
+  utter_airfare:
+    - text: "I can help you find airfare details. Please tell me the departure city, destination, and travel date."
+  utter_airline:
+    - text: "Which airline are you interested in? I can list flights or details for airlines like American, Delta, or United."
+  utter_flight:
+    - text: "I can find flights for you. Please provide the departure city, destination, and when you’d like to travel."
+  utter_flight_time:
+    - text: "What flight times are you looking for? Tell me the route and day, and I’ll check departure times."
+  utter_ground_service:
+    - text: "Need ground transportation info? Let me know the airport, and I’ll find options to get you downtown."
+  utter_quantity:
+    - text: "Can you specify what you’d like to count? For example, the number of flights or airlines on a route?"
+
+session_config:
+  session_expiration_time: 60  # minutes
+  carry_over_slots_to_new_session: true
